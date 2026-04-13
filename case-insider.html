@@ -173,6 +173,22 @@ footer{background:var(--surface);border-top:1px solid rgba(67,97,238,.08);paddin
   .nav-links li {
     list-style: none;
   }
+
+  /* ===== MOBILE RESPONSIVE CASE PAGES ===== */
+  @media (max-width: 768px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+
+    .cs-hero { padding: 5rem 1.5rem 2rem; }
+    .cs-hero h1 { font-size: 1.8rem; }
+
+    .cs-body { padding: 2rem 1.5rem; }
+    .cs-grid { grid-template-columns: 1fr; }
+    .img-grid { grid-template-columns: 1fr; }
+
+    .section-block { margin-bottom: 2.5rem; }
+    .steps { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>

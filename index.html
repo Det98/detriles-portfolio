@@ -751,8 +751,7 @@
     opacity: 1;
     transform: translateY(0);
   }
-  @media (max-width: 768px) {
-  }
+  
 
   /* SCREENSHOT FRAME */
   .screenshot-frame {
@@ -1109,6 +1108,158 @@
   }
   .nav-links li {
     list-style: none;
+  }
+
+  /* ===== MOBILE RESPONSIVE ===== */
+  @media (max-width: 768px) {
+
+    /* NAV */
+    nav {
+      padding: 1rem 1.5rem;
+    }
+    .nav-logo {
+      font-size: 1rem;
+    }
+    .nav-links {
+      display: none;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 6rem 1.5rem 3rem;
+      min-height: auto;
+    }
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+    .hero-content {
+      text-align: center;
+      order: 2;
+    }
+    .hero-photo-wrap {
+      order: 1;
+      width: 200px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    .hero-photo-circle {
+      width: 200px;
+      height: 200px;
+    }
+    .hero-photo {
+      width: 200px;
+      height: 200px;
+    }
+    .hero-name {
+      font-size: 3rem;
+    }
+    .hero-tagline {
+      font-size: 0.85rem;
+      max-width: 100%;
+    }
+    .hero-cta {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    .btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.7rem;
+    }
+    .hero-badge {
+      display: none;
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      padding: 1.5rem 1.5rem;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .stat-item {
+      border-right: none !important;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 1.6rem;
+    }
+
+    /* ABOUT */
+    .about-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 3rem 1.5rem;
+    }
+    .about-visual { order: -1; }
+    .about-card { padding: 1.5rem; }
+
+    /* EXPERIENCE */
+    .exp-inner {
+      padding: 3rem 1.5rem;
+    }
+    .exp-timeline {
+      padding-left: 1rem;
+    }
+
+    /* CASES */
+    #cases {
+      padding: 3rem 1.5rem !important;
+    }
+    .cases-grid {
+      grid-template-columns: 1fr !important;
+    }
+    .case-card {
+      padding: 1.8rem 1.5rem;
+    }
+    .insider-proof-grid {
+      grid-template-columns: 1fr;
+    }
+    .case-metrics {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    /* SKILLS */
+    .skills-inner {
+      padding: 3rem 1.5rem;
+    }
+    .skills-grid {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+
+    /* RENEW FRAMEWORK */
+    .renew-grid {
+      grid-template-columns: 1fr 1fr !important;
+    }
+    .renew-letter { font-size: 2.5rem; }
+
+    /* CONTACT */
+    .contact-inner {
+      padding: 3rem 1.5rem;
+    }
+    .contact-links {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    /* GENERAL */
+    section {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-name { font-size: 2.5rem; }
+    .stats-bar { grid-template-columns: 1fr 1fr; }
+    .renew-grid { grid-template-columns: 1fr !important; }
+    .case-metrics { grid-template-columns: 1fr; }
+    .hero-photo-wrap, .hero-photo-circle, .hero-photo {
+      width: 160px;
+      height: 160px;
+    }
   }
 </style>
 </head>
