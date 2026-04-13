@@ -1261,6 +1261,66 @@
       height: 160px;
     }
   }
+
+  /* ABOUT SECTION */
+  .about-section {
+    padding: 6rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      grid-template-columns: 1fr !important;
+      gap: 2.5rem !important;
+      padding: 3rem 1.5rem !important;
+    }
+    .about-visual {
+      order: 2;
+    }
+    .about-text {
+      order: 1;
+    }
+    .about-card {
+      padding: 1.5rem;
+    }
+    .about-tags {
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .section-title {
+      font-size: 2rem;
+    }
+    .about-text p {
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+    .specialty-item {
+      padding: 0.8rem 0;
+    }
+  }
+
+  .section-container {
+    padding: 6rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .section-container-top0 {
+    padding-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .section-container {
+      padding: 3rem 1.5rem !important;
+    }
+    .section-container-top0 {
+      padding-top: 0 !important;
+    }
+  }
 </style>
 </head>
 <body>
@@ -1332,7 +1392,7 @@
 </div>
 
 <!-- ABOUT -->
-<div id="about" style="padding: 6rem 4rem; max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center;">
+<div id="about" class="about-section">
   <div class="about-text fade-in">
     <p class="section-label">About Me</p>
     <h2 class="section-title" style="margin-bottom: 1.5rem;">Hello, <br>Detri here!</h2>
@@ -1434,7 +1494,7 @@
 </section>
 
 <!-- CASE STUDIES -->
-<div id="cases" style="padding: 6rem 4rem; max-width: 1200px; margin: 0 auto;">
+<div id="cases" class="section-container">
   <div class="fade-in">
     <p class="section-label">Portfolio</p>
     <h2 class="section-title">Project</h2>
@@ -1591,7 +1651,7 @@
 </div>
 
 <!-- RENEW FRAMEWORK HIGHLIGHT -->
-<div style="padding: 0 4rem 6rem; max-width: 1200px; margin: 0 auto;">
+<div class="section-container section-container-top0">
   <div class="fade-in">
     <p class="section-label">Signature Methodology</p>
     <h2 class="section-title" style="margin-bottom: 0.5rem;">The RENEW Framework</h2>
@@ -1679,7 +1739,7 @@
 </section>
 
 <!-- EDUCATION -->
-<div id="education" style="padding: 6rem 4rem; max-width: 1200px; margin: 0 auto;">
+<div id="education" class="section-container">
   <div class="fade-in">
     <p class="section-label">Background</p>
     <h2 class="section-title">Education</h2>
